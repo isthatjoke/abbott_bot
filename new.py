@@ -114,7 +114,7 @@ def callback_inline(call):
         if call.data == "ss_3_yes":
             bot.send_message(call.message.chat.id, ".!.")
         if call.data == "ss_3_no":
-            bot.send_message(call.message.chat.id, ".!.git push heroku master")
+            bot.send_message(call.message.chat.id, ".!.")
         if call.data == "get":
             bot.send_message(call.message.chat.id, "Не забудьте заполнить шапку акта")
             bot.send_message(call.message.chat.id,
