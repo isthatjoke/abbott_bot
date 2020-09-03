@@ -181,13 +181,13 @@ def callback_inline(call):
                                                    " 5. Обратиться в страховую компанию.")
         if call.data == "get":
             bot.send_message(call.message.chat.id, "Не забудьте заполнить шапку акта")
-            bot.send_message(call.message.chat.id,
-                             "https://drive.google.com/file/d/1A6SMTU7wVP6pxe9AbwtusupmZYUXdUdW/view?usp=sharing")
+            doc = open('act_get.DOC', 'rb')
+            bot.send_document(call.message.chat.id, doc)
             bot.send_message(call.message.chat.id, "Не пугайтесь, на ноутбуке файл будет выглядеть нормально")
         if call.data == "pull":
             bot.send_message(call.message.chat.id, "Не забудьте заполнить шапку акта")
-            bot.send_message(call.message.chat.id,
-                             "https://drive.google.com/file/d/1KjfYcq7tUTta4l8XYAv3FkqxXDliU_ib/view?usp=sharing")
+            doc = open('act_pull.DOC', 'rb')
+            bot.send_document(call.message.chat.id, doc)
             bot.send_message(call.message.chat.id, "Не пугайтесь, на ноутбуке файл будет выглядеть нормально")
 
 
